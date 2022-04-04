@@ -1,0 +1,226 @@
+<!doctype html>
+<html class="no-js" lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Z1 Fronted UI</title>
+        <meta name="description" content="Z1 Fronted UI">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="css/main.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet"> 
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <header class="header-main">
+            <nav class="navigation">
+                <a class="logo" href="index.html">
+                    <img class="logo-img" src="img/logo.png" alt="Logo">
+                </a>
+                <ul class="menu">
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Press</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+
+                <a class="menu-hamburger" href="#">
+                    <img class="menu-hamburger-img" src="img/menu-hamburguer.png" alt="Menu">
+                </a>
+                
+            </nav>
+
+            <div class="menu-responsive">
+                <ul class="menu-responsive-options">
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Press</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            
+            <article class="claim-info">
+                <div class="claim-info-text">
+                    <h1 class="info-main animate__animated animate__pulse">Lorem ipsum dolor sit amet.</h1>
+                    <p class="info-text">Maecenas mollis in eros id ullamcorper. Vivamus at dignissim erat. Mauris semper iaculis consequat. Aliquam a auctor elit, ac facilisis neque.</p>
+                    <a class="buttom" href="#"><span class="buttom-text-icon">Learn more</span></a>                   
+                </div>
+            </article>
+        </header>
+        <!-- END Header -->
+
+        <section>
+
+            <article class="platform">
+                <header class="platform-header">
+                    <!-- ¿Cómo pensamos estos 2 elementos de cara al marcado y al SEO? Para mí "Platform" es el encabezado, pero es cierto que si queremos posicionar por keywords quiza "Title" fuese el encabezado, pero eso lo veo como una ligera trampa -->
+                    <h2 class="platform-title">Platform</h2>
+                    <p class="platform-subtitle">Title</p>         
+                </header>
+                <div class="platform-text">
+                    <p>Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Praesent at mattis augue. Nunc vulputate velit ut ornare sagittis.</p>
+                </div>
+                <section>   <!-- Aunque no sea propiamente un listado (son sólo 2 elementos) lo marco como <ul> por si en futuro crecen los elementos -->
+                    <ul class="platform-cards">
+                        <li class="platform-card">
+                            <article>
+                                <img class="platform-card-img" src="img/intestine-pictogram.png" alt="Intenstine pictogram">
+                                <header>
+                                    <h3 class="platform-card-title">Title</h3>
+                                </header>
+                                <p class="platform-card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas mollis in eros id ullamcorper. Vivamus at dignissim erat. Mauris semper iaculis consequat. Aliquam a auctor elit, ac facilisis neque.</p>
+                                <p class="platform-card-text">Vivamus at dignissim erat. Mauris semper iaculis consequat. Aliquam a auctor elit, ac facilisis neque.</p>
+                            </article>
+                        </li>
+                        <li class="platform-card animate__animated animate__bounce">
+                            <article>
+                                <img class="platform-card-img" src="img/stomach-pictogram.png" alt="Stomach pictogram">
+                                <header>
+                                    <h3 class="platform-card-title">Title</h3>
+                                </header>
+                                <p class="platform-card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas mollis in eros id ullamcorper. Vivamus at dignissim erat. Mauris semper iaculis consequat. Aliquam a auctor elit, ac facilisis neque.Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+                                <p class="platform-card-text">Vivamus at dignissim erat. Mauris semper iaculis consequat. Aliquam a auctor elit, ac facilisis neque.</p>
+                            </article>
+                        </li>
+                    </ul>
+                </section>
+            </article>
+            <!-- END Platform -->
+
+            <article class="about-us">
+                <div class="about-us-main">
+                    <header class="about-us-header">
+                        <!-- ¿Cómo pensamos estos 2 elementos de cara al marcado y al SEO? Para mí "About us" es el encabezado, pero es cierto que si queremos posicionar por keywords quiza "Praesent at mattis..." fuese el encabezado, pero eso lo veo como una ligera trampa -->
+                        <h2 class="about-us-title">About us</h2>
+                        <p class="about-us-subtitle">Praesent at mattis augue. Nunc vulputate velit ut ornare sagittis.</p>          
+                    </header>
+                    <p class="about-us-text">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+                    <a class="about-us-text-link" href="#">More about us</a>
+                </div>
+                <div class="about-us-img">
+                    <img src="img/about-us.jpg" alt="Three workers in coveralls talking">
+                </div>              
+            </article>
+            <!-- END About us -->
+
+            <article class="press">
+                <div class="press-title-link">
+                    <header class="press-header">
+                        <h2 class="press-header-title">Press</h2>
+                    </header>
+                    <div>
+                        <a class="press-header-link" href="#">See all</a>
+                    </div>
+                </div>
+                <section class="press-card-section">
+                    <ul class="press-cards">
+                        <li class="press-card press-card-1">
+                            <article class="press-card-item">
+                                <!-- Este tipo de cards me gusta englobarlos con un <a href="#"></a> me parece más usable, pero como está el link "Read more" sólo pongo el link en ese texto -->
+                                <span class="press-card-label">Press release</span>
+                                <h3 class="press-card-title">liquam nunc sapien, scelerisque at odio ac, gravida vehicula nunc. Curabitur elementum magna aliquet nulla pretium consectetur.</h3>
+                                <span class="press-card-date">Feb 28, 2020</span>
+                                <a class="press-card-link" href="#">Read more</a>
+                            </article>
+                        </li>
+                        <li class="press-card press-card-2">
+                            <article class="press-card-item">
+                                <!-- Este tipo de cards me gusta englobarlos con un <a href="#"></a> me parece más usable, pero como está el link "Read more" sólo pongo el link en ese texto -->
+                                <span class="press-card-label">Press coverage</span>
+                                <h3 class="press-card-title">liquam nunc sapien, scelerisque at odio ac, gravida vehicula nunc.</h3>
+                                <span class="press-card-date">Feb 28, 2020</span>
+                                <a class="press-card-link" href="#">Read more</a>
+                            </article>
+                        </li>
+                        <li class="press-card press-card-3">
+                            <article class="press-card-item">
+                                <!-- Este tipo de cards me gusta englobarlos con un <a href="#"></a> me parece más usable, pero como está el link "Read more" sólo pongo el link en ese texto -->
+                                <span class="press-card-label">Press release</span>
+                                <h3 class="press-card-title">Suspendisse eget rhoncus nunc. Pellentesque non est non massa sodales volutpat id a orci. Nunc mattis mollis odio, at mollis justo ultrices nec. Integer ut tempus neque.</h3>
+                                <span class="press-card-date">Feb 28, 2020</span>
+                                <a class="press-card-link" href="#">Read more</a>
+                            </article>
+                        </li>
+                    </ul>
+                </section>           
+            </article>
+            <!-- END Press -->
+
+        </section>
+        <!-- END Main -->
+
+        <footer class="footer">
+            <div class="footer-map">
+                <div class="footer-logo">
+                    <a class="footer-logo-link" href="index.html">
+                        <img class="footer-logo-img" src="img/logo.png" alt="Logo">
+                    </a>
+                </div>
+                <div class="footer-map-web">
+                    <h3 class="footer-map-web-title">Title</h3>
+                    <ul class="footer-map-web-links">
+                        <li>
+                            <a class="footer-map-web-link" href="#">Science</a>
+                        </li>
+                        <li>
+                            <a class="footer-map-web-link" href="#">Platform</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-map-web">
+                    <h3 class="footer-map-web-title">Title</h3>
+                    <ul class="footer-map-web-links">
+                        <li>
+                            <a class="footer-map-web-link" href="#">About us</a>
+                        </li>
+                        <li>
+                            <a class="footer-map-web-link" href="#">Press</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-map-web">
+                    <h3 class="footer-map-web-title">Title</h3>
+                    <ul class="footer-map-web-links">
+                        <li>
+                            <a class="footer-map-web-link" href="#">Contact us</a>
+                        </li>
+                        <li>
+                            <a class="footer-map-web-link" href="#">LinkedIn</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- END map web-->
+
+            <div class="footer-copy-terms">
+                <span class="footer-copy-year">© 2022</span>
+                <ul class="footer-terms">
+                    <li>
+                        <a class="footer-terms-link" href="#">Privacy policy</a>
+                        <span class="footer-terms-dot"> · </span>
+                    </li>
+                    <li>
+                        <a class="footer-terms-link" href="#">Cookies</a>
+                        <span class="footer-terms-dot"> · </span>
+                    </li>
+                    <li>
+                        <a class="footer-terms-link" href="#">Terms and conditions</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- END copy & terms -->
+        </footer>
+        <!-- END Footer -->
+
+
+        <script src="js/jquery-3.6.0.min.js"></script>
+        <script src="js/main.js"></script>
+
+    </body>
+</html>

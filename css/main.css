@@ -1,0 +1,879 @@
+/* ***************************************************************************************************************** */
+/* Por lo general suelo trabajar en Saas con clases atomizadas y también con frameworks tipo Tailwindcss o Bootstrap */
+/* ***************************************************************************************************************** */
+
+/* Reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* END Reset */
+
+
+body{
+    font-family: 'Space Grotesk', sans-serif;
+    background-color: #ffffff;
+    color: #1F191A;
+}
+
+.menu-responsive{
+    display: none;
+    text-align: center;
+    padding: 60px 0;
+}
+.menu-responsive-options li a {
+    color: #1F191A;
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+
+/* Header */
+.header-main{
+    width: 1320px;
+    margin: 0 auto;
+}
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+}
+.logo{
+    display: block;
+    margin-left: 52px;
+}
+.logo-img{
+    width: 160px;
+    height: 40px;
+}
+.menu-hamburger{
+    display: none;
+}
+.menu{
+    list-style: none;
+    margin-right: 52px;
+}
+.menu li{
+    display: inline;
+}
+.menu li a{
+    font-size: 16px;
+    color: #1F191A;
+    text-decoration: none;
+    margin-left: 40px;
+}
+.menu li a:hover{
+    color: #94243F;
+}
+.claim-info{
+    background-image: url("../img/bg-header.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 680px;
+    display: flex;
+    align-items: center;
+}
+.claim-info-text{
+    width: 580px;
+    margin-left: 80px;
+}
+.info-main{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 68px;
+    line-height: 120%;
+    color: #FEFFFF;
+}
+.info-text{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 150%;
+    color: #FEFFFF;
+    margin: 28px 0 40px 0;
+}
+.buttom{
+    font-size: 16px;
+    line-height: 24px;
+    padding: 12px 24px;
+    background: #BD1C43;
+    border-radius: 4px;
+    color: #FEFFFF;
+    text-decoration: none;
+}
+.buttom:hover{
+    background: #94243F;
+}
+.buttom-text-icon{
+    padding-right: 30px;
+    background-image: url("../img/arrow-right-white.png");
+    background-repeat: no-repeat;
+    background-position: right center;
+}
+/* END Header */
+
+
+/* Platform */
+.platform{
+    width: 1320px;
+    margin: 0 auto;
+    padding-top: 120px;
+}
+.platform-header{
+    text-align: center;
+    width: 800px;
+    margin: 0 auto;
+}
+.platform-title{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 140%;
+    color: #7C2D44;
+    text-transform: uppercase;
+}
+.platform-subtitle{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 120%;
+    margin: 24px 0px;
+}
+.platform-text{
+    width: 800px;
+    margin: 0 auto 64px auto;
+    text-align: center;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 160%;
+}
+.platform-cards{
+    display: flex;
+    padding: 0 28px;
+}
+.platform-card{
+    background-color: #BD1C43;
+    color: #FEFFFF;
+    width: 100%;
+    padding: 45px 40px;
+    margin: 0 20px;
+}
+.platform-card-title{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 140%;
+    margin: 24px 0;
+}
+.platform-card-text{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 160%;
+    margin-bottom: 24px;
+}
+/* END Platform */
+
+/* About us */
+.about-us{
+    width: 1320px;
+    margin: 128px auto 0 auto;
+    background-color: #FAF4EF;
+    background-image: url("../img/bg-circles.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px 0;
+}
+.about-us-main{
+    margin-left: 80px;
+    width: 488px;
+}
+.about-us-img{
+    margin-right: 80px;
+}
+.about-us-img img{
+    width: 564px;
+}
+.about-us-title{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 140%;
+    color: #7C2D44;
+    text-transform: uppercase;
+}
+.about-us-subtitle{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 120%;
+    margin: 16px 0 32px 0;
+}
+.about-us-text{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 160%;
+    margin-bottom: 52px;
+}
+.about-us-text-link{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #BD1C43;
+    padding-right: 30px;
+    background-image: url("../img/arrow-right-red.png");
+    background-repeat: no-repeat;
+    background-position: right center;
+    text-decoration: none;
+}
+.about-us-text-link:hover{
+    color: #94243F;
+}
+/* END About us */
+
+/* Press */
+.press{
+    width: 1320px;
+    margin: 128px auto 0 auto;
+}
+.press-title-link{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 64px;
+}
+.press-header-title{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 120%;
+    margin-left: 44px;
+}
+.press-header-link{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #BD1C43;
+    padding-right: 30px;
+    background-image: url("../img/arrow-right-red.png");
+    background-repeat: no-repeat;
+    background-position: right center;
+    text-decoration: none;
+    margin-right: 44px;
+}
+.press-header-link:hover{
+    color: #94243F;
+}
+.press-card-section{
+    padding: 0 20px;
+}
+.press-cards{
+    display: flex;
+    position: relative;
+    min-height: 440px;
+}
+.press-card{
+    background-color: #FAF4EF;
+    width: 100%;
+    padding: 40px;
+    margin: 0 24px;
+}
+.press-card-label{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 140%;
+    color: #7C2D44;
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: 16px;
+}
+.press-card-title{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 150%;
+}
+.press-card-date{
+    display: block;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 160%;
+    color: #6D6D6D;
+    margin-top: 16px;
+    margin-bottom: 30px;
+}
+.press-card-link{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #BD1C43;
+    text-decoration: none;
+    display: block;
+    position: absolute;
+    bottom: 40px;
+}
+.press-card-link:hover{
+    color: #94243F;
+}
+/* END Press */
+
+/* Footer */
+.footer{
+    background-color: #1F191A;
+    margin-top: 128px;
+}
+.footer-map{
+    display: flex;
+    width: 1216px;
+    margin: 0 auto 0 auto;
+    padding-top: 100px;
+}
+.footer-logo{
+    width: 100%;
+}
+.footer-logo-link{
+    display: block;
+}
+.footer-logo-img{
+    width: 160px;
+    height: 40px;
+}
+.footer-map-web{
+    width: 100%;
+}
+.footer-map-web-title{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 160%;
+    color: #AEAEAE;
+}
+.footer-map-web-link{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 160%;
+    color: #FEFFFF;
+    display: inline-block;
+    margin-top: 20px;
+    text-decoration: none;
+}
+.footer-map-web-link:hover{
+    font-weight: bold;
+} 
+.footer-copy-terms{
+    width: 1216px;
+    padding: 158px 0 64px 0;
+    margin: 0 auto 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.footer-copy-year{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 140%;
+    color: #A9B2B5;
+}
+.footer-terms{
+    list-style: none;
+    margin-right: 52px;
+}
+.footer-terms li{
+    display: inline;
+    color: rgba(255, 255, 255, 0.7);
+}
+.footer-terms li .footer-terms-link{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 140%;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.7);
+}
+.footer-terms-dot{
+    padding: 0 10px;
+}
+/* END Footer */
+
+
+@media (max-width: 1400px) {
+    /* Header */
+    .header-main{
+        width: 1120px;
+    }
+    /* END Header */
+
+    /* Platform */
+    .platform{
+        width: 1120px;
+        padding-top: 100px;
+    }
+    /* END Platform */
+
+    /* About us */
+    .about-us{
+        width: 1120px;
+        margin: 100px auto 0 auto;
+    }
+    /* END About us */
+
+    /* Press */
+    .press{
+        width: 1120px;
+        margin: 100px auto 0 auto;
+    }
+    .press-card-title{
+        font-size: 18px;
+    }
+    /* END Press */
+
+    /* Footer */
+    .footer-map{
+        width: 1010px;
+    }
+    .footer-copy-terms{
+        width: 1010px;
+    }
+    /* Footer */
+}
+
+@media (max-width: 1200px) {
+    /* Header */
+    .logo {
+        margin-left: 76px;
+    }
+    .menu {
+        display: none;
+        margin-right: 76px;
+    }
+    .menu-hamburger{
+        display: block;
+        margin-right: 76px;
+    }
+    .header-main{
+        width: 920px;
+    }
+    .claim-info{
+        background-size: cover;
+        height: 400px;
+    }
+    .claim-info-text{
+        width: 420px;
+        margin-left: 80px;
+    }
+    .info-main{
+        font-size: 48px;
+        line-height: 110%;
+    }
+    .info-text{
+        font-size: 20px;
+        line-height: 140%;
+        margin: 24px 0 32px 0;
+    }
+    /* END Header */
+
+    /* Platform */
+    .platform{
+        width: 920px;
+        padding-top: 100px;
+    }
+    .platform-card-text{
+        font-size: 16px;
+        line-height: 140%;
+        margin-bottom: 20px;
+    }
+    /* END Platform */
+
+    /* About us */
+    .about-us{
+        width: 920px;
+        margin: 100px auto 0 auto;
+    }
+    .about-us-main{
+        width: 408px;
+    }
+    .about-us-subtitle{
+        font-size: 32px;
+    }
+    .about-us-img img{
+        width: 330px;
+    }
+    /* END About us */
+
+    /* Press */
+    .press{
+        width: 920px;
+        margin: 100px auto 0 auto;
+        padding: 0;
+    }
+    .press-card-section{
+        padding: 0 20px;
+    }
+    .press-cards{
+        display: block;
+        position: relative;
+        min-height: none;
+        box-sizing: border-box;
+    }
+    .press-card{
+        width: 100%;
+        padding: 40px 30px;
+        box-sizing: border-box;
+        margin: 0 0 40px 0;
+        position: relative;
+    }
+    .press-card-item{
+        position: block;
+        display: relative;
+    }
+    .press-card-date{
+        display: block;
+    }
+    .press-card-link{
+        position: absolute;
+        display: block;
+        margin-top: 20px;
+        bottom: 20px;
+    }
+    /* END Press */
+
+    /* Footer */
+    .footer-map{
+        width: 810px;
+    }
+    .footer-copy-terms{
+        width: 810px;
+    } 
+    /* END Footer */
+}
+@media (max-width: 992px) {
+    /* Header */
+    .logo {
+        margin-left: 36px;
+    }
+    .menu {
+        margin-right: 36px;
+    }
+    .menu-hamburger{
+        margin-right: 36px;
+    }
+    .header-main{
+        width: 740px;
+    }
+    .claim-info{
+        background-size: cover;
+        height: 410px;
+    }
+    .claim-info-text{
+        width: 410px;
+        margin-left: 40px;
+    }
+    .info-main{
+        font-size: 46px;
+    }
+    /* END Header */
+
+    /* Platform */
+    .platform{
+        width: 740px;
+        padding-top: 70px;
+    }
+    .platform-card-text{
+        font-size: 16px;
+        line-height: 140%;
+        margin-bottom: 20px;
+    }
+    .platform-header {
+        width: 600px;
+    }
+    .platform-text {
+        width: 600px;
+        margin-bottom: 40px;
+    }
+    .platform-card {
+        padding: 35px 30px;
+        margin: 0 10px;
+    }
+    /* END Platform */
+
+    /* About us */
+    .about-us{
+        width: 740px;
+        margin: 90px auto 0 auto;
+    }
+    .about-us-main{
+        width: 390px;
+        margin-left: 40px;
+    }
+    .about-us-subtitle{
+        font-size: 30px;
+    }
+    .about-us-text {
+        font-size: 16px;
+        line-height: 140%;
+        margin-bottom: 40px;
+    }
+    .about-us-img img{
+        width: 260px;
+    }
+    /* END About us */
+
+    /* Press */
+    .press{
+        width: 740px;
+        margin: 80px auto 0 auto;
+    }
+    .press-title-link{
+        margin-bottom: 32px;
+    }
+    .press-header-title{
+        margin-left: 22px;
+    }
+    .press-header-link{
+        margin-right: 22px;
+    }
+    .press-card-section{
+        padding: 0 20px;
+    }
+    .press-card{
+        padding: 28px 28px;
+        margin: 0 0 24px 0;
+    }
+    .press-card-date{
+        margin-top: 12px;
+    }
+    /* END Press */
+
+    /* Footer */
+    .footer{
+        margin-top: 100px;
+    }
+    .footer-map{
+        width: 700px;    
+    }
+    .footer-copy-terms{
+        width: 700px;
+    } 
+    .footer-logo-img {
+        width: 120px;
+        height: 30px;
+    }
+    /* END Footer */
+}
+@media (max-width: 768px) {
+    /* Header */
+    .logo {
+        margin-left: 28px;
+    }
+    .menu {
+        margin-right: 28px;
+    }
+    .menu-hamburger{
+        margin-right: 28px;
+    }
+    .header-main{
+        width: 90%;
+    }
+    .claim-info{
+        background-size: cover;
+        height: 400px;
+        background-position: right;
+    }
+    .claim-info-text{
+        width: 80%;
+        margin-left: 30px;
+    }
+    .info-main{
+        font-size: 42px;
+    }
+    /* END Header */
+
+    /* Platform */
+    .platform{
+        width: 90%;
+        padding-top: 60px;
+    }
+    .platform-header {
+        width: 90%;
+    }
+    .platform-text {
+        width: 90%;
+        margin-bottom: 30px;
+    }
+    .platform-cards{
+        flex-direction: column;
+        box-sizing: border-box;
+        padding: 0;
+    }
+    .platform-card {
+        padding: 28px 20px;
+        margin:0 0 20px 0;
+        box-sizing: border-box;
+    }
+    /* END Platform */
+
+    /* About us */
+    .about-us{
+        width: 90%;
+        flex-direction: column;
+        margin: 80px auto 0 auto;
+    }
+    .about-us-main{
+        width: 90%;
+        margin: 0 auto;
+    }
+    .about-us-img img{
+        display: none;
+    }
+    /* END About us */
+
+    /* Press */
+    .press{
+        width: 90%;
+        margin: 70px auto 0 auto;
+    }
+    .press-title-link{
+        margin-bottom: 30px;
+    }
+    .press-header-title{
+        margin-left: 0;
+    }
+    .press-header-link{
+        margin-right: 0;
+    }
+    .press-card-section{
+        padding: 0;
+    }
+    .press-card{
+        padding: 26px 26px;
+        margin: 0 0 22px 0;
+    }
+    .press-card-date{
+        margin-top: 10px;
+    }
+    /* END Press */
+
+    /* Footer */
+    .footer{
+        margin-top: 60px;
+    }
+    .footer-map{
+        width: 90%;
+        flex-direction: column;  
+        padding-top: 70px;  
+        text-align: center;
+    }
+    .footer-logo{
+        margin-bottom: 30px;
+    }
+    .footer-logo-img {
+        width: 160px;
+        height: 40px;
+    }
+    .footer-map-web{
+        margin-bottom: 26px;
+    }
+    .footer-map-web-link{
+        margin-top: 10px;
+    }
+    .footer-copy-terms{
+        width: 90%;
+        padding-top: 60px;
+    } 
+    .footer-terms{
+        margin-right: 0;
+    }
+    /* END Footer */
+}
+@media (max-width: 576px) {
+    /* Header */
+    .logo{
+        margin-left: 0;
+    }
+    .menu{
+        display: none;
+    }
+    .menu-hamburger{
+        margin-right: 0;
+    }
+    .info-main {
+        font-size: 32px;
+    }
+    .info-text {
+        font-size: 16px;
+        line-height: 130%;
+    }
+    /* END Header */
+
+    /* Footer */
+    .footer-copy-terms{
+        flex-direction: column;
+        text-align: center;
+    }
+    .footer-copy-year{
+        margin-bottom: 20px;
+    }
+    .footer-terms li .footer-terms-link{
+        font-size: 11px;
+    }
+    .footer-terms-dot{
+        padding: 0px;
+        font-size: 8px;
+    }
+    /* END Footer */
+}
+  
+
+
